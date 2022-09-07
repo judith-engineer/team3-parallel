@@ -18,7 +18,7 @@ pipeline{
                         echo "sub-job2 task"
                     }
                 }
-                stage('user-check'){
+                stage('usercheck'){
                     steps{
                         sh 'cat /etc/passwd | grep jenkins'
                     }
